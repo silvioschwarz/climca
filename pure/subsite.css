@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    align-items: center;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+/* Title block banner */
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 150px;
+    background-color: lightgray;
+}
+
+
+
+.description {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 50px;
+    background-color: lightgray;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width: 80dvw;
+}
+
+section h2,h4,p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word; 
+}
+
+
+table, tr {
+    width: 80dvw;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+th,td{
+      padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+
+
