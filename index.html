@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Climca Corporation</title>
+	<style>
+		:root { --primary: #176b87; --dark: #12313b; --light: #eef8fa; }
+		* { box-sizing: border-box; margin: 0; padding: 0; }
+		body { font-family: Arial, sans-serif; line-height: 1.6; color: var(--dark); }
+		header { background: white; border-bottom: 1px solid #dcecef; position: sticky; top: 0; z-index: 10; }
+		.nav { max-width: 1100px; margin: auto; min-height: 70px; padding: 0 1.25rem; display: flex; align-items: center; justify-content: space-between; }
+		.logo { color: var(--primary); font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+		nav ul { display: flex; gap: 1.5rem; list-style: none; }
+		nav a { color: var(--dark); text-decoration: none; font-weight: 600; }
+		nav a:hover { color: var(--primary); }
+		.menu-toggle { display: none; border: 0; background: none; color: var(--dark); font-size: 1.7rem; cursor: pointer; }
+		.hero { background: linear-gradient(120deg, #e6f6f8, #fff); padding: 6rem 1.25rem; }
+		.hero-content, .section { max-width: 1100px; margin: auto; }
+		.hero h1 { max-width: 650px; font-size: clamp(2.3rem, 6vw, 4rem); line-height: 1.1; margin-bottom: 1rem; }
+		.hero p { max-width: 600px; font-size: 1.15rem; margin-bottom: 1.75rem; }
+		.button { display: inline-block; padding: .8rem 1.3rem; border-radius: 5px; background: var(--primary); color: white; text-decoration: none; font-weight: 700; }
+		.section { padding: 4rem 1.25rem; }
+		.section h2 { margin-bottom: 2rem; text-align: center; font-size: 2rem; }
+		.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+		.card { padding: 1.5rem; border: 1px solid #dcecef; border-radius: 8px; background: white; box-shadow: 0 4px 15px #12313b0d; }
+		.card h3 { color: var(--primary); margin-bottom: .5rem; }
+		.about { background: var(--light); text-align: center; }
+		footer { padding: 1.5rem; background: var(--dark); color: white; text-align: center; }
+		@media (max-width: 700px) {
+			.menu-toggle { display: block; }
+			nav ul { display: none; position: absolute; top: 70px; left: 0; right: 0; padding: 1rem 1.25rem; background: white; flex-direction: column; gap: .75rem; border-bottom: 1px solid #dcecef; }
+			nav ul.open { display: flex; }
+			.hero { padding: 4rem 1.25rem; }
+			.cards { grid-template-columns: 1fr; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<a class="logo" href="#home">Climca</a>
+			<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+			<nav aria-label="Main navigation">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="hero" id="home">
+			<div class="hero-content">
+				<h1>Building a smarter, more sustainable future.</h1>
+				<p>Climca helps organizations turn ambitious ideas into meaningful, lasting impact through practical innovation.</p>
+				<a class="button" href="#contact">Work with us</a>
+			</div>
+		</section>
+		<section class="section" id="services">
+			<h2>What we do</h2>
+			<div class="cards">
+				<article class="card"><h3>Strategy</h3><p>Clear plans that connect your goals with measurable results.</p></article>
+				<article class="card"><h3>Innovation</h3><p>Fresh, practical solutions designed for a changing world.</p></article>
+				<article class="card"><h3>Partnership</h3><p>Expert support and collaboration from first idea to delivery.</p></article>
+			</div>
+		</section>
+		<section class="about" id="about"><div class="section"><h2>Driven by purpose</h2><p>We believe responsible business creates stronger communities, healthier environments, and better opportunities for everyone.</p></div></section>
+		<section class="section" id="contact"><h2>Let’s connect</h2><p style="text-align:center">Ready to start a conversation? Email us at <a href="mailto:hello@climca.example">hello@climca.example</a>.</p></section>
+	</main>
+	<footer><p>&copy; 2025 Climca Corporation. All rights reserved.</p></footer>
+	<script>
+		const toggle = document.querySelector('.menu-toggle');
+		const menu = document.querySelector('nav ul');
+		toggle.addEventListener('click', () => {
+			const open = menu.classList.toggle('open');
+			toggle.setAttribute('aria-expanded', open);
+		});
+	</script>
+</body>
+</html>
