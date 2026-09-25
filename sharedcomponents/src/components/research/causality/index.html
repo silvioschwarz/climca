@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" type="text/css" href="../../subsite.css" />
+  </head>
+
+  <body>
+     <header>
+      <nav class="navbar">
+        <div>
+          <a href="./index.html" class="navbar-brand navbar-brand-logo">
+            <img src="./images/logos/logo_small.png" alt="" class="icon" />
+          </a>
+        </div>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle Navigation"
+        >
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="./index.html#about">
+              <span class="menu-text">About</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./index.html#research">
+              <span class="menu-text">Research</span>
+              </a>
+          </li>
+
+          <li>
+            <a href="./index.html#projects">
+              <span class="menu-text">Projects</span>
+              </a>
+          </li>
+
+          <li>
+            <a href="./index.html#people">
+              <span class="menu-text">People</span>
+              </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="drop-btn dropdown-toggle">Publications 
+                <span class="arrow">▾</span>
+                </a>
+            <ul class="dropdown-menu">
+              <li><a href="./publications/index.html">Papers</a></li>
+              <li><a href="./publications/software/index.html">Software</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="drop-btn dropdown-toggle">
+                Contact Us<span class="arrow">▾</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html#contact">Contact</a></li>
+              <li><a href="./tenders/index.html">Open Positions</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/LIM-Climate-Causality/lim-climate-causality.github.io">
+              <i class="fa fa-github fa-2xl">
+              </i> 
+              <span class="menu-text">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+     
+
+    <!-- main -->
+    <main class="content">
+      <div class="title">
+        <h1>Causal Data Science</h1>
+<!--         
+          <div class="description">
+            How we use causal inference, causal discovery, and causal
+            representation learning to uncover the drivers of regional climate
+            variability and extreme events.
+          </div> -->
+      </div>
+          <div class="quarto-figure quarto-figure-center">
+            <figure class="figure">
+              <p>
+                <img
+                  src="../../images/research/causality.jpg"
+                  class="img-fluid figure-img"
+                />
+              </p>
+              <figcaption>
+                Relationship between Causal Representation Learning, Causal
+                Discovery, and Causal Inference. Figure by Marlene Kretschmer.
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            Causal data science offers powerful tools to better understand the
+            drivers of regional climate variability and extreme events. Moving
+            beyond correlation, causal approaches help identify the mechanisms
+            that underlie complex climate processes—an essential step toward
+            more robust and interpretable insights. Our work integrates methods
+            from
+            <strong
+              >causal inference, causal discovery, and causal representation
+              learning</strong
+            >
+            to investigate cause-effect relationships in climate data.
+          </p>
+          <p>
+            <strong>Causal inference</strong> techniques estimate the influence
+            of specific drivers while accounting for confounding factors. We
+            apply this to disentangle the roles of multiple teleconnections
+            (e.g.&nbsp;ENSO, MJO) and to better understand their individual and
+            combined contributions to regional climate impacts and extremes.
+            These causal tools are particularly well-suited to identifying how
+            such patterns propagate through the climate system.
+          </p>
+          <p>
+            With <strong>causal discovery</strong>, we can further uncover
+            potential causal structures directly from observational data,
+            revealing interactions that may not be captured in purely
+            correlation-based approaches.
+          </p>
+          <p>
+            A newer and rapidly developing area of our research is
+            <strong>causal representation learning</strong>, which enables us to
+            learn structured, low-dimensional representations of climate
+            patterns directly from high-dimensional gridded data. By integrating
+            causal reasoning with machine learning, this approach helps isolate
+            key modes of variability and improves the interpretability of
+            complex datasets. Together, these methods form a growing toolkit for
+            tackling pressing questions in climate science. While challenges
+            remain, causal data science holds strong potential to complement
+            physical models and deepen our understanding of how remote climatic
+            drivers can shape local, and regional changes.
+          </p>
+          <p><strong>Publications:</strong></p>
+          <p>
+            Carvalho-Oliveira, J., Di Capua, G., Borchert, L. F., Donner, R. V.,
+            and Baehr, J.: Causal relationships and predictability of the summer
+            East Atlantic teleconnection (2024), Weather Clim. Dynam., 5,
+            1561–1578,
+            <a href="https://doi.org/10.5194/wcd-5-1561-2024"
+              >https://doi.org/10.5194/wcd-5-1561-202</a
+            >.
+          </p>
+          <p>
+            Kretschmer, M.; Adams, S.; Arribas, A.; Saggioro, E.; Prudden, R.;
+            Robinson, N.; Shepherd, T.: Quantifying causal teleconnection
+            pathways (2021), Bulletin of the American Meteorological Society.
+            2020. DOI:
+            <a href="10.1175/BAMS-D-20-0117.1">10.1175/BAMS-D-20-0117.1</a>.
+          </p>
+          <p>
+            Pfleiderer, P., Schleussner, C.-F., Geiger, T., and Kretschmer, M.:
+            Robust predictors for seasonal Atlantic hurricane activity
+            identified with causal effect networks (2020), Weather Clim. Dynam.,
+            1, 313–324,
+            <a href="https://doi.org/10.5194/wcd-1-313-2020"
+              >https://doi.org/10.5194/wcd-1-313-2020</a
+            >.
+          </p>
+    </main>
+    <!-- /main -->
+
+    <footer>
+      <div>
+        <p><a href="../../impressum.html">IMPRESSUM</a></p>
+      </div>
+      <div>
+        <a
+          href="https://github.com/LIM-Climate-Causality/lim-climate-causality.github.io"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+
+        <a href="mailto:marlene.kretschmer@uni-leipzig.de">
+          <i class="fa fa-envelope" role="img"> </i>
+        </a>
+      </div>
+      <div>Copyright © ClimCA 2025</div>
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
